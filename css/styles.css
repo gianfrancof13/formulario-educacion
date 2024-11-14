@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgba(74,172,196,0.8) 0%, rgba(53,67,147,0.8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 20px 0.2em rgba(0, 0, 0, 0.2);
+}
+
+form input[type="text"],
+form input[type="date"],
+form select,
+form button {
+    width: 100%; /* Ancho completo dentro del formulario */
+    box-sizing: border-box; /* Asegura que padding y border no cambien el ancho total */
+    padding: 10px; /* Espaciado interno uniforme */
+    font-size: 1em; /* Tamaño de fuente uniforme */
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 1em;
+    color: #333333;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #3f51b5;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: #3f51b5;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #303f9f;
+}
+
+p {
+    font-size: 0.9em;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+p[style*="color:green;"] {
+    background-color: #e0f2f1;
+    color: #2e7d32;
+    border: 1px solid #2e7d32;
+}
+
+p[style*="color:red;"] {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #c62828;
+}
+
+.caja-titulo {
+    border: 2px solid #4aacc4; /* Color del borde */
+    background-color: #f4f4f9; /* Fondo del cuadro */
+    padding: 40px 60px;        /* Espaciado interno */
+    border-radius: 8px;        /* Bordes redondeados */
+    text-align: center;        /* Centrar el texto */
+    box-shadow: 0 0 20px 0.2em rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;       /* Espacio debajo del cuadro */
+}
+
+.caja-titulo h1 {
+    margin: 0;                 /* Elimina márgenes del h1 */
+    color: #354393;            /* Color del texto */
+    font-size: 1.5em;          /* Tamaño del texto */
+}
